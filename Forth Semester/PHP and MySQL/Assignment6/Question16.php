@@ -1,3 +1,4 @@
+<!-- 16.	 Write a program to create Chess board in PHP using for loop -->
 <?php
     echo "<table border='1' width='400px' height='400px' cellspacing='0' cellpadding='0'>";
     for ($row = 0; $row < 8; $row++) {

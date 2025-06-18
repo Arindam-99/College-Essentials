@@ -1,3 +1,4 @@
+<!-- 32. Write a PHP program to upload a file and get information about the upload file. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

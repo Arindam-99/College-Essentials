@@ -1,3 +1,4 @@
+<!-- 8.	Write a program to implement mathematical calculator. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="cal2.php" method="post">
+<form action="/Assignment3/Question_8_Adj.php" method="post">
     <label> Enter 1st number :</label>&nbsp;&nbsp;
     <input type = "number" name ="num1" required>
     <br><br>

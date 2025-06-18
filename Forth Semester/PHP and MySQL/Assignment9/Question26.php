@@ -1,3 +1,4 @@
+<!-- 26. Write a program in PHP to get current directory, filename and code line number  -->
 <?php
 $currentDirectory = __DIR__;
 

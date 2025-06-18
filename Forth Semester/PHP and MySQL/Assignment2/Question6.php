@@ -1,3 +1,4 @@
+<!-- 6.	Write a PHP program to swap two numbers -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Swapping 2 number: </title>
 </head>
 <body>
-    <form action="swapAdj.php" method="post">
+    <form action="/Assignment2/Question_6_Adj.php" method="post">
         <label for="swap">Swapping of two numbers:</label>
     <br>
         <label for="first">Enter the first Number:

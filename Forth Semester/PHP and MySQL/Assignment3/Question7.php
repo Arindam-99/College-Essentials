@@ -1,3 +1,4 @@
+<!-- 7.	 Write a PHP program to compute give number multiplication table. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Multiplecation Table </title>
 </head>
 <body>
-    <form action="multableAdj.php" method="POST">
+    <form action="/Assignment3/Question_7_Adj.php" method="POST">
         <h1>Multiplecation Table of N number: </h1>
         <br>
 <label for="">Enter the Number: </label>

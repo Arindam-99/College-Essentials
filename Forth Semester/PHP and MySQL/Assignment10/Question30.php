@@ -1,3 +1,7 @@
+<!-- 30. To create a self-processing form, use the $_SERVER['REQUEST_METHOD'] that returns the request method e.g., GET or POST.
+⮚	If the $_SERVER['REQUEST_METHOD']  is GET, you show the form.
+⮚	And if the $_SERVER['REQUEST_METHOD']  is POST, you process it. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

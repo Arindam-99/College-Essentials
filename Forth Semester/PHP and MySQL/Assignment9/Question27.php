@@ -1,3 +1,4 @@
+<!-- 27. Write a program in PHP to read from directory. -->
 <?php
 $directory = "."; 
 

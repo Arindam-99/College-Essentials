@@ -1,3 +1,11 @@
+<!-- 17.	Write a program to calculate Electricity bill in PHP
+Conditions:
+●	For first 50 units – Rs. 3.50/unit
+●	For next 100 units – Rs. 4.00/unit
+●	For next 100 units – Rs. 5.20/unit
+●	For units above 250 – Rs. 6.50/unit
+You can use conditional statements. -->
+
 <!DOCTYPE html>
 <html>
 <head>

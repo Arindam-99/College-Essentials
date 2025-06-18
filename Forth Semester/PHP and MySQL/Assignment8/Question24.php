@@ -1,3 +1,4 @@
+<!-- 24.Write a division table program in PHP using for loop.
 <?php
 $size = 10; // Define the size of the division table
 
@@ -22,4 +23,4 @@ for ($i = 1; $i <= $size; $i++) {
 }
 
 echo "</table>";
-?>
+?> -->

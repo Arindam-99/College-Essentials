@@ -1,3 +1,4 @@
+<!-- 11.	Write a php program to check whether given number is Armstrong or not. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="amstrongAdj.php" method="post">
+    <form action="/Assignment4/Question_11_Adj.php" method="post">
     <label for="Number">Enter the number: </label>
     <input type="number" name="num" id="num">
     <input type="submit" value="Submit">

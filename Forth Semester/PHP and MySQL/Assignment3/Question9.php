@@ -1,3 +1,4 @@
+<!-- 9.	Write PHP program to display current date and display using getdate() function. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

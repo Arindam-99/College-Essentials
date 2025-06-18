@@ -1,3 +1,4 @@
+<!-- 14.	Write a PHP script for the following: Design a form to accept a string. Write a function to count the total number of vowels (a,e,i,o,u) from the string. Show the occurrences of each vowel from the string.  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

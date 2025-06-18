@@ -1,3 +1,4 @@
+<!-- 18.	Write a PHP Script to find out the Sum of the Individual Digits. -->
 <!DOCTYPE html>
 <html>
 <head>

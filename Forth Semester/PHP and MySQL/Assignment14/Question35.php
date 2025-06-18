@@ -1,4 +1,4 @@
-
+<!-- 35. Create a form have three input field namely File Name(text field), Message(text area),Task(list box) and a Done (submit button). A user will enter a file name and enter some text in Message (text area) then select Create Task from (list box) and submit the Done button. If file not available in data(directory) then a file will create with file name and content of Message will write in the file. if file not available in the data directory then a message will appear in Message(text area) that “ File Doesn’t exists .”. when user enter a file name and select Read from list box , if file is available then  content of existing file will appear in message box. Again user will enter file name and select Append from list box then file will appended with content. -->
 <?php
 $messageContent = ""; // To refill message textarea after action
 

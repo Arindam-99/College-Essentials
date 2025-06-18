@@ -1,3 +1,4 @@
+<!-- 5.	Write a php program to find maximum of three numbers. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Calculator</title>
 </head>
 <body>
-    <form action="another.php" method="post"> 
+    <form action="/Assignment2/Question_5_Adj.php" method="post"> 
 
         <label for="num1">Enter the first number: </label>
         <input type="number" placeholder="Enter the number" name="num1" id="num1" required>

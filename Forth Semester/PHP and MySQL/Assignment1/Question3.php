@@ -1,3 +1,4 @@
+<!-- 3.	To write a program gets the name and phone no of the user from a form and show greeting text. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 </head>
 <body>
     <h2>Enter Your Details</h2>
-    <form action="process.php" method="POST">
+    <form action="/Assignment1/Question_3_Adj.php" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 

@@ -1,3 +1,13 @@
+<!-- 23.	Write a PHP program to create a String and store value on that string “php Program - the complete SOLUTION for WEB development”. Do the following operations.
+⮚	convert lowercase string to uppercase
+⮚	convert uppercase string to lowercase
+⮚	convert first character uppercase
+⮚	convert first character of all the words uppercase
+⮚	get the last 11 characters of string
+⮚	replace the first ‘the’ of the following string with ‘best’
+⮚	get the Second word of a sentence
+⮚	insert a string at the specified position in a given string -->
+
 <!DOCTYPE html>
 <html>
 <head>
