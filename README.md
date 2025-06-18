@@ -13,25 +13,25 @@ Whether it's DSA, web development, Java,MERN Stack, PHP, or any scripting or bac
 ---
 
 ## 🗂 Repository Structure
--- First  Semester
+## First  Semester
   |---- C Language
   |---- Digital Logic
--- Second Semester
+## Second Semester
   |----Dsa With C
   |----Python 
   |---- Html,Css 
--- Third  Semester
+## Third  Semester
   |----Dbms
   |----JAVA
   |----Internet & Web Tech
--- Forth  Semester
+## Forth  Semester
   |----Daa(Design Analysis and Algorithm)
   |----FullStack Development Part-1
   |----PHP & MySQL 
--- Fifth  Semester
+## Fifth  Semester
 |----
 |----
--- Sixth  Semester
+## Sixth  Semester
 |----
 |----
 
