@@ -1,3 +1,4 @@
+//6. Write a Node.js program to explain asynchronous and synchronous functions with examples.
 const fs = require('fs');
 
 console.log("1. Start of the program");

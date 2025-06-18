@@ -1,3 +1,5 @@
+//1	Create a Node.js script demonstrating variables, functions, conditionals, loops, objects, arrays, and asynchronous code.
+
 // Define variables
 const greeting = "Hello, Node.js!";
 let counter = 0;

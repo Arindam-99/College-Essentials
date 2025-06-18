@@ -1,3 +1,4 @@
+//Write a Node.js script for the REPL environment, including functions, array methods, and asynchronous operations.
 // Define a sample array
 const numbers = [1, 2, 3, 4, 5];
 

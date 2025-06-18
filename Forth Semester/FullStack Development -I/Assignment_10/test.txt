@@ -1,0 +1,65 @@
+✅ Step 1: Initialize package.json
+In your project directory, run:
+
+npm init -y
+
+This will generate a default package.json file like this:
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "A simple Node.js project using dotenv",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
+
+✅ Step 2: Install External Package (dotenv)
+Install dotenv to load environment variables from a .env file:
+npm install dotenv
+
+This will update the dependencies section:
+"dependencies": {
+  "dotenv": "^16.4.5"
+}
+
+✅ Step 3: Create a .env File
+In the root of your project, create a file named .env:
+
+PORT=3000
+API_KEY=your_api_key_here
+
+✅ Step 4: Use dotenv in Your App (e.g., index.js)
+
+require('dotenv').config();
+
+const port = process.env.PORT;
+const apiKey = process.env.API_KEY;
+
+console.log(`Server will start on port ${port}`);
+console.log(`API Key: ${apiKey}`);
+
+📦 Final package.json Example
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "A simple Node.js project using dotenv",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {}
+}

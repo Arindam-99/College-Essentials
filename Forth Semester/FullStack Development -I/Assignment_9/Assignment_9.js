@@ -1,4 +1,5 @@
-// assignment_9.js
+//a)Write a Node.js program to describe local modules with two functions.
+//b)Write a Node.js program to describe local modules with an object.
 
 // Importing local module (mathOperations.js)
 const mathOperations = require('./mathOperations');

@@ -16,7 +16,7 @@ console.log("\n--------------------------------------\n");
 // File Extension: .js
 // Join Paths: C:\Users\ARINDAM  DAS\OneDrive\Desktop\Node Js of college\Assignment_7\test\file.txt
 // Resolve Path: C:\Users\ARINDAM  DAS\OneDrive\Desktop\Node Js of college\Assignment_7\test\file.txt
-
+//--------------------------------------------------------------------
 // b) Node.js program to describe the core modules 'path' and 'fs'
 const fs = require('fs');
 

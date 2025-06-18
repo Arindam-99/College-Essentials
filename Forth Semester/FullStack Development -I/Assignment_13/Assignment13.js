@@ -1,3 +1,9 @@
+/*a)	Create a Node.js project named "Calculator" with a server handling routes for:
+b)	A home page (/) displaying a welcome message and a link to the calculator page.
+c)	 A calculator page (/calculator) with a form to input two numbers and calculate their sum.
+d)	 A result page (/calculate-result) parsing user input, calculating the sum using a separate addition module, and displaying the result.
+ */
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');

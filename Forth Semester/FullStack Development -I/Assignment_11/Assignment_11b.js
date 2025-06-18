@@ -1,3 +1,4 @@
+//b)	Extend the server to handle routes and process different HTTP methods (GET, POST, PUT, DELETE).
 const http = require('http');
 
 const server = http.createServer((req, res) => {

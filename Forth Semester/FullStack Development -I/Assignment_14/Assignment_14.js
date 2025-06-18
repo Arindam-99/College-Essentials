@@ -1,3 +1,7 @@
+//a)	Create a Node.js project using Express that:
+//b)	Responds with both HTML and JSON.
+//c)	Serves different HTML files at different routes
+
 const express = require('express');
 const path = require('path');
 

@@ -1,4 +1,8 @@
-// Node.js program demonstrating the use of Buffers
+/* Create a Node.js program demonstrating the use of Buffers, including:
+Creating buffers with Buffer.from() and Buffer.alloc().
+Writing data using write().
+Slicing buffers using slice().*/
+
 
 // Creating buffers using Buffer.from() and Buffer.alloc()
 const bufferFrom = Buffer.from('Hello, Buffer!');

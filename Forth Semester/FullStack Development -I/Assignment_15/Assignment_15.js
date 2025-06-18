@@ -1,3 +1,8 @@
+//a)	Extend the Express project to:
+// b)	 Serve different HTML files at different routes and perform a calculation (e.g., add two numbers from a user form).
+// c)	Implement routing with dynamic parameters in the URL.
+// d)	Use application-level middleware for tasks like logging or handling errors.
+
 const express = require('express');
 const path = require('path');
 const fs = require('fs');

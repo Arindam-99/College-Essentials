@@ -1,3 +1,4 @@
+//12.Write a Node.js program to perform CRUD operations (Create, Read, Update, Delete) on a file using the fs core module.
 const fs = require('fs');
 const filePath = 'data.txt';
 

@@ -1,3 +1,4 @@
+//5. Write a Node.js program to calculate the execution time of multiple functions.
 const { performance } = require('perf_hooks');
 
 function measureExecutionTime(fn, ...args) {
