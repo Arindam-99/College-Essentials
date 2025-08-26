@@ -1,11 +1,10 @@
+# Question : ||Real-world Dataset Visualization: Exploratory Data Analysis (e.g., Titanic Data)||
 # titanic_eda.py
-# Real-world Dataset Visualization: Exploratory Data Analysis (Titanic Data)
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# -----------------------------
 # Step 1: Load Dataset
 # -----------------------------
 # Titanic dataset is available in seaborn
@@ -14,7 +13,6 @@ titanic = sns.load_dataset("titanic")
 print("First 5 rows of dataset:")
 print(titanic.head())
 
-# -----------------------------
 # Step 2: Basic Info
 # -----------------------------
 print("\nDataset Info:")
@@ -23,7 +21,6 @@ print(titanic.info())
 print("\nMissing Values:")
 print(titanic.isnull().sum())
 
-# -----------------------------
 # Step 3: Univariate Analysis
 # -----------------------------
 plt.figure(figsize=(6,4))
@@ -41,7 +38,6 @@ sns.histplot(titanic["age"].dropna(), bins=30, kde=True, color="blue")
 plt.title("Age Distribution")
 plt.show()
 
-# -----------------------------
 # Step 4: Bivariate Analysis
 # -----------------------------
 plt.figure(figsize=(6,4))
@@ -59,7 +55,6 @@ sns.boxplot(x="survived", y="age", data=titanic, palette="Set1")
 plt.title("Age vs Survival")
 plt.show()
 
-# -----------------------------
 # Step 5: Correlation Heatmap
 # -----------------------------
 plt.figure(figsize=(8,6))
@@ -67,7 +62,6 @@ sns.heatmap(titanic.corr(numeric_only=True), annot=True, cmap="coolwarm", linewi
 plt.title("Correlation Heatmap")
 plt.show()
 
-# -----------------------------
 # Step 6: Multivariate - Survival by Class & Gender
 # -----------------------------
 plt.figure(figsize=(8,6))
