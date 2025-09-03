@@ -1,72 +1,60 @@
-# Question : ||Real-world Dataset Visualization: Exploratory Data Analysis (e.g., Titanic Data)||
-# titanic_eda.py
+# To perform EDA on a real-world dataset like Titanic using various plots
+# Library Functions
+import pandas as pd 
+import seaborn as sns 
+import matplotlib.pyplot as plt 
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+# Load Titanic dataset 
+df = sns.load_dataset('titanic')
 
-# Step 1: Load Dataset
-# -----------------------------
-# Titanic dataset is available in seaborn
-titanic = sns.load_dataset("titanic")
+# Display first few rows 
+print("/nFirst few rows:")
+print(df.head(),"\n")
 
-print("First 5 rows of dataset:")
-print(titanic.head())
+#Basic Info 
+print("\nBasic Info:")
+print(df.info(),"\n")
 
-# Step 2: Basic Info
-# -----------------------------
-print("\nDataset Info:")
-print(titanic.info())
+#Summary statistics (only for numeric columns)
+print("\nBasic Info:")
+print(df.info(),"\n")
 
-print("\nMissing Values:")
-print(titanic.isnull().sum())
+# Summery statuctics (only for numeric columns)
+print("\nStatistical summery:")
+print(df.describe(),"\n")
 
-# Step 3: Univariate Analysis
-# -----------------------------
-plt.figure(figsize=(6,4))
-sns.countplot(x="survived", data=titanic, palette="Set2")
-plt.title("Survival Count (0 = Died, 1 = Survived)")
+# Histogram 
+sns.histplot(df['age'],bins=20,color='brown')
+plt.title('Histogram of Age')
 plt.show()
 
-plt.figure(figsize=(6,4))
-sns.countplot(x="sex", data=titanic, palette="Set1")
-plt.title("Gender Distribution")
+
+# KDE plot 
+sns.kdeplot(df['age'],fill=True,color="red")
+plt.title('KDE Plot of Age')
 plt.show()
 
-plt.figure(figsize=(6,4))
-sns.histplot(titanic["age"].dropna(), bins=30, kde=True, color="blue")
-plt.title("Age Distribution")
+#Countplot
+sns.countplot(x='class', data=df,color='lightblue')
+plt.title('Passenger Count by class')
 plt.show()
 
-# Step 4: Bivariate Analysis
-# -----------------------------
-plt.figure(figsize=(6,4))
-sns.countplot(x="pclass", hue="survived", data=titanic, palette="Set3")
-plt.title("Survival by Passenger Class")
+#Barplot 
+sns.countplot(x='sex',data=df,color='violet')
+plt.title("passenger Count by Sex")
 plt.show()
 
-plt.figure(figsize=(6,4))
-sns.countplot(x="sex", hue="survived", data=titanic, palette="Set2")
-plt.title("Survival by Gender")
+# Scatter plot
+sns.scatterplot(x='age',y='fare',date=df)
+plt.titlr('Age Vs Fare')
 plt.show()
 
-plt.figure(figsize=(6,4))
-sns.boxplot(x="survived", y="age", data=titanic, palette="Set1")
-plt.title("Age vs Survival")
+#Boxplot
+sns.boxplot(x='class',y='fare',data=df,color='pink')
+plt.title("Fare Distribution by Class")
 plt.show()
 
-# Step 5: Correlation Heatmap
-# -----------------------------
-plt.figure(figsize=(8,6))
-sns.heatmap(titanic.corr(numeric_only=True), annot=True, cmap="coolwarm", linewidths=0.5)
-plt.title("Correlation Heatmap")
-plt.show()
-
-# Step 6: Multivariate - Survival by Class & Gender
-# -----------------------------
-plt.figure(figsize=(8,6))
-sns.catplot(x="pclass", hue="sex", col="survived",
-            data=titanic, kind="count", palette="Set2")
-plt.subplots_adjust(top=0.8)
-plt.suptitle("Survival by Passenger Class & Gender")
+#Violin plot
+sns.violinplot(x='class',y='age',data=df)
+plt.title('Age by Passenger Class')
 plt.show()
