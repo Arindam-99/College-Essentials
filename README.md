@@ -21,16 +21,17 @@ Whether it's DSA, web development, Java,MERN Stack, PHP, or any scripting or bac
   |----Python 
   |---- Html,Css 
 ## Third  Semester
-  |----Dbms
-  |----JAVA
-  |----Internet & Web Tech
+  |----Dbms & SQL 
+  |---- OOPS in JAVA
+  |----Internet & Web Tech(HTML,CSS,JS,Bootstrap) 
 ## Forth  Semester
   |----Daa(Design Analysis and Algorithm)
   |----FullStack Development Part-1
   |----PHP & MySQL 
 ## Fifth  Semester
-|----
-|----
+  |---- Artificial Inteligents 
+  |---- Machine Learning
+  |---- FullStack Development Part-2 
 ## Sixth  Semester
 |----
 |----
