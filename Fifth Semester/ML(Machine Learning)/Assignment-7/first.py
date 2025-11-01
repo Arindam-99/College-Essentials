@@ -1,31 +1,55 @@
-# Assignment: 7 ||Creating Pie Charts and Donut Charts using Matplotlib || 
-# pie_donut_charts.py
+# Question : || Working with Pandas for DataFrame Visualization (plotting from CSV data) ||
+#  Pandas DataFrame Visualization (from CSV data)
+# ============================================================
+
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-# -----------------------------
-# Example 1: Pie Chart
-# -----------------------------
-sizes = [25, 30, 20, 25]
-labels = ["A", "B", "C", "D"]
-colors = ["skyblue", "lightgreen", "salmon", "orange"]
+# Use the existing 'df' DataFrame (Titanic dataset)
+print("First 5 rows of the dataset:")
+print(df.head())  # Display first few rows
 
-plt.figure(figsize=(6,6))
-plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%',
-        startangle=90, shadow=True, explode=(0, 0.1, 0, 0))
-plt.title("Pie Chart Example")
+# Basic Info
+print("\nBasic Info:")
+print(df.info(), "\n")
+
+# Summary statistics (only for numeric columns)
+print("\nStatistical summary:")
+print(df.describe(), "\n")
+
+# Visualize distributions of numerical columns
+plt.figure(figsize=(12, 6))
+plt.subplot(1, 2, 1)
+sns.histplot(df['age'].dropna(), bins=20, kde=True)
+plt.title('Distribution of Age')
+
+plt.subplot(1, 2, 2)
+sns.histplot(df['fare'], bins=20, kde=True)
+plt.title('Distribution of Fare')
+plt.tight_layout()
 plt.show()
 
-# -----------------------------
-# Example 2: Donut Chart
-# -----------------------------
-plt.figure(figsize=(6,6))
-plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+# Visualize relationships between categorical and numerical columns
+plt.figure(figsize=(12, 6))
+plt.subplot(1, 2, 1)
+sns.boxplot(x='survived', y='age', data=df)
+plt.title('Survival by Age')
 
-# Add center circle to make it donut
-centre_circle = plt.Circle((0,0),0.70,fc='white')
-fig = plt.gcf()
-fig.gca().add_artist(centre_circle)
-
-plt.title("Donut Chart Example")
+plt.subplot(1, 2, 2)
+sns.boxplot(x='survived', y='fare', data=df)
+plt.title('Survival by Fare')
+plt.tight_layout()
 plt.show()
 
+# Visualize counts of categorical columns
+plt.figure(figsize=(12, 6))
+plt.subplot(1, 2, 1)
+sns.countplot(x='survived', data=df)
+plt.title('Survival Count')
+
+plt.subplot(1, 2, 2)
+sns.countplot(x='pclass', data=df)
+plt.title('Passenger Count by Class')
+plt.tight_layout()
+plt.show()
