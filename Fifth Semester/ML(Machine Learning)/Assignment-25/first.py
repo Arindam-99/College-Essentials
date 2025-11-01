@@ -1,16 +1,7 @@
-# Assignment 25: To predict using KNN for classification and regression
+# Load the dataset from the downloaded file
+df = pd.read_csv("BostonHousing.csv", header=None, names=['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV'], delim_whitespace=True)
 
-# Import libraries
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
-from sklearn.metrics import classification_report, confusion_matrix, mean_squared_error, r2_score
-
-df = pd.read_csv("BostonHousing.csv") # Load dataset
-
+# The rest of the code from the original cell
 X = df.drop(columns=['MEDV']) # Features
 y = df['MEDV'] # Target
 
