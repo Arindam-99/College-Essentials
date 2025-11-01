@@ -1,4 +1,4 @@
-# Customizing Charts: Titles, Labels, Legends, and Gridlines
+# Assignment: 2 || Customizing Charts: Titles, Labels, Legends, and Gridlines
 
 import matplotlib.pyplot as plt
 

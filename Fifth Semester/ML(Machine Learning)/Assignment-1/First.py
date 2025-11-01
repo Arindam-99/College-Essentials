@@ -1,4 +1,4 @@
-# Introduction to Matplotlib: Plotting Line, Bar, and Scatter Charts
+#Assignment: 1 || Introduction to Matplotlib: Plotting Line, Bar, and Scatter Charts
 import matplotlib.pyplot as plt
 
 # Data
