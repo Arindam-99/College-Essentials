@@ -1,20 +1,17 @@
-# Assignment 19: To implement KNN for classification tasks
-
-# Import library
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, precision_score, f1_score, confusion_matrix, ConfusionMatrixDisplay
 
-# Dataset
-df = pd.read_csv("sonar data.csv", header=None)
+# Load dataset (from online source)
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data"
+df = pd.read_csv(url, header=None)
 
-# Separating the features (X) and the target (y)
+# Separating the features and the target
 X = df.drop(columns=[60])
 y = df[60]
 
@@ -33,15 +30,15 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.25,
 knn_model = KNeighborsClassifier(n_neighbors=5)
 knn_model.fit(X_train, y_train)
 
-# Model Predictions
+# Predictions
 y_pred_knn = knn_model.predict(X_test)
 
-# Model Evaluation
+# Evaluation
 print("Accuracy:", accuracy_score(y_test, y_pred_knn))
 print("Precision:", precision_score(y_test, y_pred_knn))
 print("F1 Score:", f1_score(y_test, y_pred_knn))
 
-# Confusion Matrix - KNN Classifier
+# Confusion Matrix
 cm_knn = confusion_matrix(y_test, y_pred_knn)
 disp_knn = ConfusionMatrixDisplay(cm_knn, display_labels=np.unique(y))
 disp_knn.plot()
