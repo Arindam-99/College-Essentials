@@ -1,4 +1,4 @@
-# Question: ||Creating Pie Charts and Donut Charts using Matplotlib || 
+# Assignment: 7 ||Creating Pie Charts and Donut Charts using Matplotlib || 
 # pie_donut_charts.py
 import matplotlib.pyplot as plt
 
